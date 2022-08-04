@@ -1,0 +1,81 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    main.txt                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dosteine <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/07/21 09:20:19 by dosteine          #+#    #+#              #
+#    Updated: 2022/07/21 09:21:05 by dosteine         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+ex00
+
+int main()
+{
+	char	s1[10]="A";
+	char	s2[10]="B(@FRe";
+
+	printf("%d\n", ft_strcmp (s1, s2));
+	printf("%d\n", *s1);
+	printf("%d\n", *s2);
+
+	return(0);
+}
+
+ex01
+
+int main()
+{
+	char	s1[10]="0123456A";
+	char	s2[10]="0120";
+
+	printf("%d\n", ft_strncmp (s1, s2,4));
+	printf("%d\n", *s1);
+	printf("%d\n", *s2);
+
+	return(0);
+}
+
+ex02
+
+
+#include<stdio.h>
+
+int main()
+{
+	char	s1[10]="A0123456A";
+	char	s2[10]="A4120";
+
+	printf("%d\n", ft_strncmp (s1, s2,4));
+	printf("%d\n", *s1);
+	printf("%d\n", *s2);
+
+	return(0);
+}
+
+ex03
+
+#include <stdio.h>
+int main(void)
+{
+	char	dest[255] = "Vive le vent, vive le vent d'hiver";
+	char	src[255] = " a 42 Angouleme";
+
+	printf("%s\n", ft_strncat (dest, src, 50));
+}
+
+ex04
+
+#include <stdio.h>
+int main(void)
+{
+	char	dest[100] = "Vive le vent disait";
+	char	dest2[120] = "l'ane";
+	char	src[100] = "parlait au Pere fouettard !";
+
+	printf("%s\n", ft_strncat (dest, src,10));
+	printf("%s\n", ft_strncat (dest2, src,8));
+}
+
